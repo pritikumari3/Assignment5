@@ -1,0 +1,216 @@
+1.
+import java.util.Scanner;
+public class Test {
+public static void main(String[] args) {
+Scanner scn = new Scanner(System.in);
+int n = scn.nextInt();
+int a = 1; //initial 2 elements are 1 and 1
+int b = 1;
+for(int i = 1; i <= n; i++){
+System.out.print(a + “ ”);
+int sum = a+b;
+a = b; 
+b = sum;
+ }
+}
+}
+2.
+import java.util.Scanner;
+public class Test {
+public static void main(String[] args) {
+Scanner scn = new Scanner(System.in);
+int sum = 0;
+while(scn.hasNextInt()){ 
+int num = scn.nextInt();
+if(num >= 0){ 
+sum += num;
+}
+else{
+sum = -1;
+break;
+}
+}
+System.out.print(sum);
+}
+}
+3.
+import java.util.Scanner;
+public class Test {
+public static void main(String[] args) {
+Scanner scn = new Scanner(System.in);
+int n = scn.nextInt();
+int ans = 1; 
+for(int i = 2; i <= n; i++){
+ans *= i; 
+}
+System.out.println(ans);
+}
+}
+4.
+import java.util.Scanner;
+public class Test {
+public static void main(String[] args) {
+Scanner scn = new Scanner(System.in);
+int n = scn.nextInt();
+int num = 1; 
+while(num <= n){
+int count = 0;
+int i = num;
+while(i > 0){
+count++;
+i /= 10;
+}
+int val = num;
+of its digits
+int sum = 0;
+while(val > 0){ 
+int digit = val % 10;
+sum += Math.pow(digit, count);
+val /= 10;
+if(sum > val){ 
+continue;
+}
+}
+if(sum == num){ //this is an armstrong number
+System.out.println(num);
+}
+num++;
+}
+}
+5.
+public class Test {
+public static void main(String[] args) {
+int size = 5; 
+for(int i = 0; i < size; i++){
+for(int j = 0; j < size; j++){
+if(i == j || i+j == size-1){ 
+diagonals are present
+System.out.print("*");
+}else{
+System.out.print(" ");
+}
+}
+System.out.println();
+}
+}
+}
+6.
+public class Test {
+public static void main(String[] args) {
+int size = 5; 
+int alpha = 65; 
+int num = 0;
+for (int i = 1; i <= size; i++) {
+for (int j = size; j > i; j--) {
+System.out.print(" "); 
+}
+for (int k = 0; k < i * 2 - 1; k++) {
+System.out.print((char)(alpha+num++));
+}
+num = 0;
+System.out.println();
+}
+for (int i = 1; i <= size - 1; i++) {
+for (int j = 0; j < i; j++){
+System.out.print(" ");
+}
+for (int k = (size - i) * 2 - 1; k > 0; k--) {
+System.out.print((char)(alpha+num++));
+}
+num = 0;
+System.out.println();
+}
+}
+}
+6.
+public class Test {
+public static void main(String[] args) {
+int size = 5;
+for(int i = 0; i < size; i++){ 
+for(int j = 0; j < size; j++){
+if(i == size/2){ 
+System.out.print("*");
+}
+else{
+if(j == size/2){ 
+System.out.print("*");
+}else{
+System.out.print(" ");
+}
+}
+}
+System.out.println();
+}
+}
+8.
+import java.util.Scanner;
+public class Test {
+public static void main(String[] args) {
+Scanner scn = new Scanner(System.in);
+int x1;
+int x2;
+int x3;
+int number=3;
+int banner=0;
+x1 = scn.nextInt();
+int d= x1; 
+for(x2=1;x2<= x1; x2++){
+for(int e=1;e<=d;e++){
+System.out.print(" ");
+}
+if(x2==1){
+System.out.print("2");
+}
+else{
+for(x3=0; x3!= x2;){
+banner=0;
+for (int k=2;k<number;k++){ 
+if((number%k)==0)
+banner=1; //not prime
+}
+if(banner==0){ //prime
+x3++;
+System.out.print(number + " ");
+}
+number++;
+}
+}
+System.out.println(); 
+d--;
+}
+}
+}
+9.
+java.util.Scanner;
+public class Test {
+public static void main(String[] args) {
+Scanner scn = new Scanner(System.in);
+int n = scn.nextInt();
+if(isPrimport ime(n) && isPrime(n-2)){
+System.out.print(true);
+}else{
+System.out.print(false);
+}
+}
+public static boolean isPrime(int n){
+if (n <= 1)
+return false;
+for (int i = 2; i * i <= n; i++) {
+if (n % i == 0)
+return false;
+}
+return true;
+ }
+ }
+ 10.
+ import java.util.Scanner;
+public class Test {
+public static void main(String[] args) {
+Scanner scn = new Scanner(System.in);
+int n = scn.nextInt();
+for(int i = 1; i * i <= n; i++){
+System.out.print(i*i + " ");
+  
+  }
+  }
+  }
